@@ -42,21 +42,14 @@ public class Player : MonoBehaviour
       
 
 
-        if (horizontalMovement > 0.01f && small == false && flipped == false)
+        if (horizontalMovement > 0.01f && small == false )
         {
 
             transform.localScale = new Vector3(normalSize, normalSize, normalSize);
             
         }
-        else if (horizontalMovement < 0.01f && small == false && flipped == true)
-        {
-
-            transform.localScale = new Vector3(-normalSize, normalSize, -normalSize);
-
-
-
-        }
-        else if(horizontalMovement < -0.01f && small == false && flipped == false)
+      
+        else if(horizontalMovement < -0.01f && small == false )
         {
 
             transform.localScale = new Vector3(-normalSize, normalSize, normalSize);
@@ -65,12 +58,12 @@ public class Player : MonoBehaviour
 
         }
        
-        else if (horizontalMovement > 0.01f && small == true && GameObject.Find("Player").transform.rotation.eulerAngles.z == 0)
+        else if (horizontalMovement > 0.01f && small == true )
         {
             transform.localScale = new Vector3(smallSize, smallSize, smallSize);
 
         }
-        else if (horizontalMovement < -0.01f && small == true && GameObject.Find("Player").transform.rotation.eulerAngles.z == 0)
+        else if (horizontalMovement < -0.01f && small == true )
         {
             transform.localScale = new Vector3(-smallSize, smallSize, smallSize);
 
