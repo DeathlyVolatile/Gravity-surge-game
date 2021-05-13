@@ -11,6 +11,8 @@ public class GravityFlip : MonoBehaviour
 
     private bool top;
 
+    public bool got;
+
     void Start()
     {
         player = GetComponent<Player>();

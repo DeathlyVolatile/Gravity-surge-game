@@ -19,6 +19,8 @@ public class Player : MonoBehaviour
     public float normalSize;
     public float smallSize;
 
+    public bool gotGrav = false;
+    public bool gotSize = false;
     public bool small;
     public bool flipped;
 
