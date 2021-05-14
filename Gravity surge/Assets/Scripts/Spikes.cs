@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 public class Spikes : MonoBehaviour
 {
     public GameObject checkpoint;
+    public GameObject checkpoint2;
     public GameObject chara;
     public GameObject Hcam;
     public GameObject cam1;
