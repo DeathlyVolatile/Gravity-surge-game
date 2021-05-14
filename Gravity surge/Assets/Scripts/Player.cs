@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class Player : MonoBehaviour
     public float movementspeed;
     float horizontalMovement;
     public Rigidbody2D prb;
-
+    
+    public float Health = 3;
     public float jumpForce = 20f;
     public Transform feet;
     public LayerMask groundLayers;
@@ -26,14 +28,17 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
-       
-
 
     }
 
     
     private void Update()
     {
+        if(Health <= 0)
+        {
+            SceneManager.LoadScene(1);
+        }
+
         horizontalMovement = Input.GetAxisRaw("Horizontal");
       
       if (Input.GetButtonDown("Jump") && IsGrounded())

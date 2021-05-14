@@ -11,7 +11,7 @@ public class GravityFlip : MonoBehaviour
 
     private bool top;
 
-    public bool got;
+    public bool got = true;
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class GravityFlip : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetButtonDown("Fire3"))
+        if (Input.GetButtonDown("Fire3") && got == true)
         {
             prb.gravityScale *= -1;
             Rotation();

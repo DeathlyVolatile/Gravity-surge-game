@@ -7,8 +7,10 @@ public class ResizerScript : MonoBehaviour
     public GameObject player;
 
     public Player script;
-    
-    
+
+    public Sprite offline;
+    public Sprite online;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,9 +59,13 @@ public class ResizerScript : MonoBehaviour
 
     private IEnumerator EnableBox(float waitTime)
     {
+        GameObject.Find("Resizer").GetComponent<SpriteRenderer>().sprite = offline;
+
         yield return new WaitForSeconds(waitTime);
 
         GameObject.Find("Resizer").GetComponent<BoxCollider2D>().enabled = true;
+
+        GameObject.Find("Resizer").GetComponent<SpriteRenderer>().sprite = online;
     }
 
 
