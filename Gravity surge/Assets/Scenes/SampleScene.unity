@@ -1502,7 +1502,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 1960263196}
-  checkpoint2: {fileID: 0}
   chara: {fileID: 408051350}
   Hcam: {fileID: 415657021}
   cam1: {fileID: 519420028}
@@ -2078,7 +2077,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 1960263196}
-  checkpoint2: {fileID: 0}
   chara: {fileID: 408051350}
   Hcam: {fileID: 415657021}
   cam1: {fileID: 519420028}
@@ -2334,7 +2332,7 @@ Transform:
   - {fileID: 415657024}
   - {fileID: 519420032}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &370725304
 GameObject:
@@ -3297,7 +3295,7 @@ Transform:
   - {fileID: 1009392597}
   - {fileID: 525515168}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &505075050
 GameObject:
@@ -4173,7 +4171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 1960263196}
-  checkpoint2: {fileID: 0}
   chara: {fileID: 408051350}
   Hcam: {fileID: 415657021}
   cam1: {fileID: 519420028}
@@ -4595,7 +4592,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 1960263196}
-  checkpoint2: {fileID: 0}
   chara: {fileID: 408051350}
   Hcam: {fileID: 415657021}
   cam1: {fileID: 519420028}
@@ -8497,6 +8493,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1162812900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1162812901}
+  m_Layer: 0
+  m_Name: Checkpoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1162812901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162812900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4306536, y: 76.947754, z: -33.073532}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1960263198}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1184288286
 GameObject:
   m_ObjectHideFlags: 0
@@ -8744,7 +8771,7 @@ Transform:
   - {fileID: 2134456591}
   - {fileID: 1199285708}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1203878421
 GameObject:
@@ -8914,7 +8941,7 @@ Transform:
   - {fileID: 436031758}
   - {fileID: 52224886}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1239914867
 GameObject:
@@ -10107,7 +10134,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 1960263196}
-  checkpoint2: {fileID: 0}
   chara: {fileID: 408051350}
   Hcam: {fileID: 415657021}
   cam1: {fileID: 519420028}
@@ -11010,7 +11036,7 @@ Transform:
   - {fileID: 221121277}
   - {fileID: 572704295}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1730568662
 GameObject:
@@ -11417,7 +11443,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 1960263196}
-  checkpoint2: {fileID: 0}
   chara: {fileID: 408051350}
   Hcam: {fileID: 415657021}
   cam1: {fileID: 519420028}
@@ -11549,7 +11574,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 1960263196}
-  checkpoint2: {fileID: 0}
   chara: {fileID: 408051350}
   Hcam: {fileID: 415657021}
   cam1: {fileID: 519420028}
@@ -12308,7 +12332,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 1960263196}
-  checkpoint2: {fileID: 0}
   chara: {fileID: 408051350}
   Hcam: {fileID: 415657021}
   cam1: {fileID: 519420028}
@@ -12590,12 +12613,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960263196}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.1208, y: 61.2404, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.551454, y: -15.7073555, z: 33.073532}
   m_LocalScale: {x: 1.2342597, y: 1.2373308, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1162812901}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1969417024
 GameObject:
@@ -13662,7 +13685,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkpoint: {fileID: 1960263196}
-  checkpoint2: {fileID: 0}
   chara: {fileID: 408051350}
   Hcam: {fileID: 415657021}
   cam1: {fileID: 519420028}
