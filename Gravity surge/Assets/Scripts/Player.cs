@@ -21,8 +21,8 @@ public class Player : MonoBehaviour
     public float normalSize;
     public float smallSize;
 
-    public bool gotGrav = false;
-    public bool gotSize = false;
+    public ConsoleFix cf;
+   
     public bool small;
     public bool flipped;
 
@@ -109,4 +109,6 @@ public class Player : MonoBehaviour
         }
         return false;
     }
+
+    
 }

@@ -29,6 +29,7 @@ public class GravityFlip : MonoBehaviour
             Rotation();
         }
 
+        
     }
 
     void Rotation()
@@ -46,9 +47,8 @@ public class GravityFlip : MonoBehaviour
       
         top = !top;
     }
-  
 
-
+    
 
 
 }
