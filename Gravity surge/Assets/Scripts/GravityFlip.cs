@@ -10,8 +10,9 @@ public class GravityFlip : MonoBehaviour
     public Player script;
 
     private bool top;
-
     public bool got = true;
+
+    public AudioSource Flip;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class GravityFlip : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire3") && got == true)
         {
+            Flip.Play();
             prb.gravityScale *= -1;
             Rotation();
         }

@@ -30,6 +30,8 @@ public class Player : MonoBehaviour
 
     public Text Lives;
 
+    public AudioSource JuMp;
+
     void Awake()
     {
         
@@ -110,7 +112,7 @@ public class Player : MonoBehaviour
     void Jump()
     {
         Vector2 movement = new Vector2(prb.velocity.x, jumpForce);
-
+        JuMp.Play();
         prb.velocity = movement;
     }
 

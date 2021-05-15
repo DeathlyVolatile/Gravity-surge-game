@@ -11,6 +11,9 @@ public class ResizerScript : MonoBehaviour
     public Sprite offline;
     public Sprite online;
 
+    public AudioSource Grow;
+    public AudioSource Shrink;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +34,7 @@ public class ResizerScript : MonoBehaviour
             {
               transform.localScale = new Vector3(script.smallSize,script.smallSize,script.smallSize);
 
-                
+                Shrink.Play();
 
                 GameObject.Find("Resizer").GetComponent<BoxCollider2D>().enabled = false;
 
@@ -43,7 +46,7 @@ public class ResizerScript : MonoBehaviour
             {
                 transform.localScale = new Vector3(script.normalSize,script.normalSize,script.normalSize);
 
-                
+                Grow.Play();
 
                 GameObject.Find("Resizer").GetComponent<BoxCollider2D>().enabled = false;
 
