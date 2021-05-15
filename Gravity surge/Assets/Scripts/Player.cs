@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+
     
 
     public float movementspeed;
@@ -31,12 +32,14 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
-
+        
     }
 
     private void Start()
     {
         Lives.text = Health.ToString();
+        
+
     }
 
 
@@ -54,6 +57,7 @@ public class Player : MonoBehaviour
       
       if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+
             Jump();
         }
 
