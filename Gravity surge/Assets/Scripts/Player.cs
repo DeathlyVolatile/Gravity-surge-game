@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -26,15 +27,25 @@ public class Player : MonoBehaviour
     public bool small;
     public bool flipped;
 
+    public Text Lives;
+
     void Awake()
     {
 
     }
 
-    
+    private void Start()
+    {
+        Lives.text = Health.ToString();
+    }
+
+
     private void Update()
     {
-        if(Health <= 0)
+
+        Lives.text = Health.ToString();
+
+        if (Health <= 0)
         {
             SceneManager.LoadScene(1);
         }

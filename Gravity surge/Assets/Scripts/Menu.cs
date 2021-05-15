@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.U2D.Path.GUIFramework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
     public GameObject ricky;
+    public GameObject menus;
+    public GameObject Control;
     public void start()
     {
         SceneManager.LoadScene(1);
@@ -15,5 +18,15 @@ public class Menu : MonoBehaviour
         Application.Quit();
         ricky.SetActive(false);
     }
+    public void controlls()
+    {
+        menus.SetActive(false);
+        Control.SetActive(true);
 
+    }
+    public void menu()
+    {
+        Control.SetActive(false);
+        menus.SetActive(true);
+    }
 }
